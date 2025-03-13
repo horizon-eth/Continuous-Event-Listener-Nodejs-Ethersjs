@@ -13,4 +13,6 @@ export const listen = (provider = provider_wss) => {
 	});
 
 	provider.websocket.on("close", () => reconnect());
+
+	console.log(`Listening for ${EVENT_NAME} Event at ${ADDRESS} Address`);
 };
